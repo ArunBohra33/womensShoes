@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  /* This makes 1rem = 10px */
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #333;
+}
+
+main {
+  width: 85%;
+  margin: 6rem auto;
+}
+
+.font-medium {
+  font-size: 2rem;
+}
+
+.font-big {
+  font-size: 3.5rem;
+}
+
+.product-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.main-container {
+  max-width: 30rem;
+  border: 1px solid #666;
+  margin-bottom: 1.5rem;
+  box-shadow: 0.2rem 0.1rem 2rem rgba(0, 0, 0, 0.14);
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  overflow: hidden;
+  border-radius: 1.5rem;
+  -webkit-border-radius: 1.5rem;
+  -moz-border-radius: 1.5rem;
+  -ms-border-radius: 1.5rem;
+  -o-border-radius: 1.5rem;
+}
+
+.main-container:hover {
+  box-shadow: 0.2rem 0.1rem 4.2rem rgba(0, 0, 0, 0.08);
+  transform: scale(1.04);
+  -webkit-transform: scale(1.04);
+  -moz-transform: scale(1.04);
+  -ms-transform: scale(1.04);
+  -o-transform: scale(1.04);
+}
+
+.image-container,
+img.product-image {
+  width: 30rem;
+  height: 20.5rem;
+}
+
+.content-container {
+  padding: 3rem 2.5rem;
+}
+
+.product-name {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.product-description {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.product-price {
+  font-size: 3.5rem;
+}
+
+.product-purchase {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart {
+  padding: 1rem;
+  background-color: #4ed17b;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 2rem;
+  border-radius: 0.8rem;
+  -webkit-border-radius: 0.8rem;
+  -moz-border-radius: 0.8rem;
+  -ms-border-radius: 0.8rem;
+  -o-border-radius: 0.8rem;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+
+.cart:hover {
+  background-color: #48c072;
+}
+
+.cart i {
+  font-size: 1.8rem;
+}
+
+@media only screen and (max-width: 760px) {
+  html {
+    font-size: 58%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .product-list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  main {
+    width: 100%;
+  }
+  .image-container,
+  img.product-image {
+    width: 100%;
+    height: 100%;
+  }
+}
